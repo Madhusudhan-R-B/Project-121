@@ -1,0 +1,16 @@
+#g_pred{
+    border-radius:20px;
+    background-color:midnightblue;
+    width:30%;
+}
+
+#m_pred{
+    border-radius:20px;
+    background-color:orangered;
+    width:30%;
+}
+
+#image1, #image2, #image3{
+    height:115px;
+    border-radius:10px;
+}

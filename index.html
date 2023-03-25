@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Google Lens VS MobileNet</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <center>
+            <h1 style="margin:0px; background-color:black; color:white;"><img src="Google Lens.png" style="width:20%;">VS<img src="Mobile-net.png" style="width:20%;"></h1>
+            <span id="googlelens_span" class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <h1 style="color:orangered; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Google Lens</h1>
+
+                <div id="g_pred" style="padding:5px; width:80%;">
+                    <h3 style="color:white;">1st Image Prediction:</h3>
+                    <h3 id="img1_pred_g" style="padding:5px; color:aqua;">Mercedes-Benz EQE</h3>
+                </div>
+                <br>
+                <div id="g_pred" style="padding:5px; width:80%;">
+                    <h3 style="color:white;">2nd Image Prediction:</h3>
+                    <h3 id="img1_pred_g" style="padding:5px; color:aqua;">Water Bottle</h3>
+                </div>
+                <br>
+                <div id="g_pred" style="padding:5px; width:80%;">
+                    <h3 style="color:white;">3rd Image Prediction:</h3>
+                    <h3 id="img1_pred_g" style="padding:5px; color:aqua;">Golden Eagle</h3>
+                </div>
+            </span>
+
+            <span id="img_span" class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <br><br><br>
+                <div><img id="image1" src="Car.webp"></div>
+
+                <div><img id="image2" src="Bottle.webp"></div>
+
+                <div><img id="image3" src="Bird.jpeg"></div>
+            </span>
+
+            <span id="mobilenet_span" class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <h1 style="color:mediumblue; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">MobileNet</h1>
+                <div id="m_pred" style="padding:5px; width:80%;">
+                    <h3 style="color:white;">1st Image Prediction:</h3>
+                    <h3 id="img1_pred_m" style="padding:5px; color:aqua;">Sports Car</h3>
+                </div>
+
+                <br>
+                <div id="m_pred" style="padding:5px; width:80%;">
+                    <h3 style="color:white;">2nd Image Prediction:</h3>
+                    <h3 id="img1_pred_m" style="padding:5px; color:aqua;">Water Bottle</h3>
+                </div>
+
+                <br>
+                <div id="m_pred" style="padding:5px; width:80%;">
+                    <h3 style="color:white;">3rd Image Prediction:</h3>
+                    <h3 id="img1_pred_m" style="padding:5px; color:aqua;">Volcano</h3>
+                </div>
+            </span>
+        </center>
+        <script src="main.js"></script>
+    </body>
+</html>
